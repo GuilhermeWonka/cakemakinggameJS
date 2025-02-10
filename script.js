@@ -28,7 +28,7 @@ function preencherArray() {
                         Confeito: ${boloPedido[3]}`;
   return boloPedido;
 }
-const boloPedido = preencherArray();
+let boloPedido = preencherArray();
 console.log(boloPedido);
 
 function pegarIdDiv(event) {
@@ -192,7 +192,7 @@ function enviarBolo(){
         document.getElementById("pontos").textContent = `Acertou ${certo}, Pontuação: ${pontos}`;
 
     }
-    boloPedido = preencherArray();
+    let boloPedido = preencherArray();
 }
 
 function reiniciarPontos(){
