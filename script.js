@@ -17,16 +17,16 @@ let boloAtributos= [];
 let pontos = 0;
 
 function preencherArray() {
-  const boloPedido = [];
-  boloPedido[0] = Math.floor(Math.random() * 2) + 1;
+  const array = [];
+  array[0] = Math.floor(Math.random() * 2) + 1;
   for (let i = 1; i < 4; i++) {
-    boloPedido[i] = Math.floor(Math.random() * 3) + 1;
+    array[i] = Math.floor(Math.random() * 3) + 1;
   }
-  pedido.textContent = `Formato: ${boloPedido[0]},
-                        Sabor: ${boloPedido[1]},
-                        Cobertura: ${boloPedido[2]},
-                        Confeito: ${boloPedido[3]}`;
-  return boloPedido;
+  pedido.textContent = `Formato: ${array[0]},
+                        Sabor: ${array[1]},
+                        Cobertura: ${array[2]},
+                        Confeito: ${array[3]}`;
+  return array;
 }
 let boloPedido = preencherArray();
 console.log(boloPedido);
@@ -192,7 +192,7 @@ function enviarBolo(){
         document.getElementById("pontos").textContent = `Acertou ${certo}, Pontuação: ${pontos}`;
 
     }
-    preencherArray();
+    boloPedido = preencherArray();
 }
 
 function reiniciarPontos(){
