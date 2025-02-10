@@ -28,7 +28,7 @@ function preencherArray() {
                         Confeito: ${boloPedido[3]}`;
   return boloPedido;
 }
-boloPedido = preencherArray();
+const boloPedido = preencherArray();
 console.log(boloPedido);
 
 function pegarIdDiv(event) {
