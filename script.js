@@ -192,7 +192,7 @@ function enviarBolo(){
         document.getElementById("pontos").textContent = `Acertou ${certo}, Pontuação: ${pontos}`;
 
     }
-    let boloPedido = preencherArray();
+    preencherArray();
 }
 
 function reiniciarPontos(){
