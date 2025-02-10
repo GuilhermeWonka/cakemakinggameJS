@@ -179,7 +179,7 @@ function trocaAtributos(){
 
 function enviarBolo(){
     let certo = 0;
-    for (var i = boloAtributos.length - 1; i >= 0; i--) {
+    for (let i = boloAtributos.length - 1; i >= 0; i--) {
         if(boloAtributos[i] == boloPedido[i]){
             certo++;
         }
