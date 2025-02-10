@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1e1e25;
+    display: block;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    border: 5px solid white;
+}
+
+#titulo{
+    margin-top: 25px;
+}
+
+#tela-jogo{
+    width: 120vh;
+    height: 70vh;
+    display: inline-block;
+    align-content: center;
+    border-color: white;
+    background-color: #e1e1e1;
+    border: 3px solid white;
+}
+
+.hidden {
+    display: none;
+}
+#imagem-referencia{
+    display: inline-flex;
+    width: 100vh;
+    height: 15vh;
+    background-color: hotpink;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px 0px;
+    padding: 20px;
+    gap: 50px;
+}
+.bolo{
+    display: inline-block;
+    width: 30vh;
+    height: 20vh;
+    background-color: #d3d370;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.forma1, .forma1 img{
+    position: relative;
+    top:0px;
+    z-index: 1;
+}
+.forma2, .forma2 img{
+    position: relative;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#formato_bolo{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    width: 150px;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    z-index: 0;
+}
+.chocolate{
+    background-color: rgb(123, 63, 38, 1.0);
+}
+.morango{
+    background-color: rgb(255, 56, 92, 1.0);
+}
+.baunilha{
+    background-color: rgb(243, 229, 171, 1.0);
+}
+#cobertura_bolo{
+    z-index: 2;
+    width: 150px;
+    height: 50px;
+    top: 20%;
+    left: 16%;
+    position: absolute;
+    border: 2px dashed;
+}
+
+img{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.controles{
+    display: inline-flex;
+    width: 100vh;
+    height: 25vh;
+    color: black;
+    background-color: #0fb3f5;
+    position: relative;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.controles div [title~='botao']{
+    width: 10em;
+    height: 40px;
+    padding: 10px;
+    background-color: #fff;
+    margin: 7px;
+    border-radius: 10px;
+}
+.controles div [title~='botao']:hover{
+    background-color: #dededf;
+    cursor: pointer;
+}
+
+@keyframes efeitoClique {
+    0% {
+        transform: scale(1);
+        background-color: initial;
+    }
+    50% {
+        transform: scale(0.9);
+        background-color: #e0e0e0;
+    }
+    100% {
+        transform: scale(1);
+        background-color: initial;
+    }
+}
+
+.clique {
+    animation: efeitoClique 0.2s ease-out;
+    animation-iteration-count: 1;
+}

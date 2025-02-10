@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shake It Bololo!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="titulo">Shake It Bololo!</h1>
+  <div id="tela-jogo">
+    <div id="imagem-referencia">
+      <div id="pedido"></div>
+      <div id="enviar">Enviar [Espaço]</div>
+      <div id="reiniciar">Reiniciar [Enter]</div>
+      <div id="pontos">Pontuação: 0</div>
+    </div>
+
+    <div class="bolo">
+    	<div class="hidden" id="cobertura_bolo">
+       <div id="confeito_bolo">
+        <img src="granulado.png" class="hidden" id="img1">
+        <img src="chocoball.png" class="hidden" id="img2">
+        <img src="jujuba.png" class="hidden" id="img3">
+      </div>
+      </div>
+    	<div class="hidden" id="formato_bolo"></div>
+    </div>
+    <div class="controles">
+      <div class="formatos">
+        <p>Formato</p>
+        <div title="botao" id="forma1">Quadrado [Q]</div>
+        <div title="botao" id="forma2">Redondo [A]</div>
+        <div title="botao" class="hidden">...</div>
+      </div>
+      <div class="recheios">
+        <p>Sabor</p>
+        <div title="botao" id="reche1">Chocolate [W]</div>
+        <div title="botao" id="reche2">Morango [S]</div>
+        <div title="botao" id="reche3">Baunilha [X]</div>
+      </div>
+      <div class="coberturas">
+        <p>Cobertura</p>
+        <div title="botao" id="cober1">Chocolate [E]</div>
+        <div title="botao" id="cober2">Morango [D]</div>
+        <div title="botao" id="cober3">Baunilha [C]</div>
+      </div>
+      <div class="confeitos">
+        <p>Confeito</p>
+        <div title="botao" id="confe1">Granulado [R]</div>
+        <div title="botao" id="confe2">Choco Ball [F]</div>
+        <div title="botao" id="confe3">Jujuba [V]</div>
+      </div>
+    </div>
+  </div>
+</body>
+<audio id="game-music" src="pop.mp3"></audio>
+<script src="script.js"></script>
+</html>
